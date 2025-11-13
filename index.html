@@ -10,10 +10,10 @@
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/tooplate-style.css">
     <style>
-        /* Team section custom styles */
+        /* Team section custom styles (smaller version) */
         .tm-team-member {
-            border-radius: 20px;
-            padding: 20px;
+            border-radius: 15px;
+            padding: 15px;
             word-wrap: break-word;
             transition: transform 0.3s, box-shadow 0.3s;
             background-color: #2c2c2c;
@@ -21,10 +21,10 @@
 
         .tm-team-member img {
             width: 100%;
-            border-radius: 15px;
-            margin-bottom: 15px;
+            border-radius: 12px;
+            margin-bottom: 10px;
             object-fit: cover;
-            height: 250px;
+            height: 180px; /* lebih kecil */
         }
 
         .tm-team-member i {
@@ -39,13 +39,13 @@
 
         .tm-team-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* lebih kecil */
+            gap: 20px; /* jarak lebih kecil */
         }
 
         @media (max-width: 768px) {
             .tm-team-grid {
-                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
             }
         }
 
@@ -75,10 +75,9 @@
         </div>
 
         <!-- Image 1 -->
-<div class="item" data-desktop-seq-no="2" data-mobile-seq-no="4">
-    <img src="img/image-01.jpg" alt="Galaxy Soda Bottle" class="tm-img-left" style="width:100%; object-fit:cover; max-height:300px;">
-</div>
-
+        <div class="item" data-desktop-seq-no="2" data-mobile-seq-no="4">
+            <img src="img/image-01.jpg" alt="Galaxy Soda Bottle" class="tm-img-left" style="width:100%; object-fit:cover; max-height:300px;">
+        </div>
 
         <!-- Benefit Section -->
         <div class="item tm-bg-secondary tm-text-white tm-block tm-block-wider tm-block-pad tm-block-left-2" data-desktop-seq-no="3" data-mobile-seq-no="5">
@@ -122,11 +121,9 @@
         </div>
 
         <!-- Image 3 -->
-<div class="item" data-desktop-seq-no="6" data-mobile-seq-no="2">
-    <img src="img/image-02.jpg" alt="Galaxy Soda Product Showcase" style="width:100%; object-fit:cover; max-height:500px;">
-</div>
-
-
+        <div class="item" data-desktop-seq-no="6" data-mobile-seq-no="2">
+            <img src="img/image-02.jpg" alt="Galaxy Soda Product Showcase" style="width:100%; object-fit:cover; max-height:500px;">
+        </div>
 
         <!-- Image 4 -->
         <div class="item" data-desktop-seq-no="8" data-mobile-seq-no="6">
@@ -134,67 +131,65 @@
         </div>
 
         <!-- Team Section -->
-<div class="item tm-bg-white tm-block tm-form-section" data-desktop-seq-no="9" data-mobile-seq-no="7">
-    <div class="tm-form-container tm-block-pad">
-        <header>
-            <h2 class="tm-text-uppercase tm-text-gray-light tm-mb tm-text-center" style="margin-bottom:20px;">
-                Our Team Members
-            </h2>
-        </header>
+        <div class="item tm-bg-white tm-block tm-form-section" data-desktop-seq-no="9" data-mobile-seq-no="7">
+            <div class="tm-form-container tm-block-pad">
+                <header>
+                    <h2 class="tm-text-uppercase tm-text-gray-light tm-mb tm-text-center" style="margin-bottom:20px;">
+                        Our Team Members
+                    </h2>
+                </header>
 
-        <div class="tm-team-grid">
-            <!-- Member 1 -->
-            <div class="tm-team-member tm-bg-secondary tm-text-white">
-                <img src="img/member1.jpg" alt="Team Member 1">
-                <p><i class="fas fa-user"></i> <strong>Name:</strong> Abdul Hamid Dehana F</p>
-                <p><i class="fas fa-id-badge"></i> <strong>NIM:</strong> 240605110263</p>
-                <p><i class="fas fa-envelope"></i> <strong>Email:</strong> hamidgg9@gmail.com</p>
-                <p><i class="fab fa-whatsapp"></i> <strong>WhatsApp:</strong> +6285749898251</p>
+                <div class="tm-team-grid">
+                    <!-- Member 1 -->
+                    <div class="tm-team-member tm-bg-secondary tm-text-white">
+                        <img src="img/member1.jpg" alt="Team Member 1">
+                        <p><i class="fas fa-user"></i> <strong>Name:</strong> Abdul Hamid Dehana F</p>
+                        <p><i class="fas fa-id-badge"></i> <strong>NIM:</strong> 240605110263</p>
+                        <p><i class="fas fa-envelope"></i> <strong>Email:</strong> hamidgg9@gmail.com</p>
+                        <p><i class="fab fa-whatsapp"></i> <strong>WhatsApp:</strong> +6285749898251</p>
+                    </div>
+
+                    <!-- Member 2 -->
+                    <div class="tm-team-member tm-bg-secondary tm-text-white">
+                        <img src="img/member2.jpg" alt="Team Member 2">
+                        <p><i class="fas fa-user"></i> <strong>Name:</strong> Ismy Maziyyatul Aziz</p>
+                        <p><i class="fas fa-id-badge"></i> <strong>NIM:</strong> 240605110032</p>
+                        <p><i class="fas fa-envelope"></i> <strong>Email:</strong> ismyagust23@gmail.com</p>
+                        <p><i class="fab fa-whatsapp"></i> <strong>WhatsApp:</strong> +6285143875454</p>
+                    </div>
+
+                    <!-- Member 3 -->
+                    <div class="tm-team-member tm-bg-secondary tm-text-white">
+                        <img src="img/member3.jpg" alt="Team Member 3">
+                        <p><i class="fas fa-user"></i> <strong>Name:</strong> Panji Fajar Perdana</p>
+                        <p><i class="fas fa-id-badge"></i> <strong>NIM:</strong> 240605110051</p>
+                        <p><i class="fas fa-envelope"></i> <strong>Email:</strong> allsatargamer@gmail.com</p>
+                        <p><i class="fab fa-whatsapp"></i> <strong>WhatsApp:</strong> +628519818790</p>
+                    </div>
+
+                    <!-- Member 4 -->
+                    <div class="tm-team-member tm-bg-secondary tm-text-white">
+                        <img src="img/member4.jpg" alt="Team Member 4">
+                        <p><i class="fas fa-user"></i> <strong>Name:</strong> Nafisatus Zahra</p>
+                        <p><i class="fas fa-id-badge"></i> <strong>NIM:</strong> 240605110234</p>
+                        <p><i class="fas fa-envelope"></i> <strong>Email:</strong> nafisatuszahra9@gmail.com</p>
+                        <p><i class="fab fa-whatsapp"></i> <strong>WhatsApp:</strong> +6282213096772</p>
+                    </div>
+                </div>
             </div>
 
-            <!-- Member 2 -->
-            <div class="tm-team-member tm-bg-secondary tm-text-white">
-                <img src="img/member2.jpg" alt="Team Member 2">
-                <p><i class="fas fa-user"></i> <strong>Name:</strong> Ismy Maziyyatul Aziz</p>
-                <p><i class="fas fa-id-badge"></i> <strong>NIM:</strong> 240605110032</p>
-                <p><i class="fas fa-envelope"></i> <strong>Email:</strong> ismyagust23@gmail.com</p>
-                <p><i class="fab fa-whatsapp"></i> <strong>WhatsApp:</strong> +6285143875454</p>
-            </div>
-
-            <!-- Member 3 -->
-            <div class="tm-team-member tm-bg-secondary tm-text-white">
-                <img src="img/member3.jpg" alt="Team Member 3">
-                <p><i class="fas fa-user"></i> <strong>Name:</strong> Panji Fajar Perdana</p>
-                <p><i class="fas fa-id-badge"></i> <strong>NIM:</strong> 240605110051</p>
-                <p><i class="fas fa-envelope"></i> <strong>Email:</strong> allsatargamer@gmail.com</p>
-                <p><i class="fab fa-whatsapp"></i> <strong>WhatsApp:</strong> +628519818790</p>
-            </div>
-
-            <!-- Member 4 -->
-            <div class="tm-team-member tm-bg-secondary tm-text-white">
-                <img src="img/member4.jpg" alt="Team Member 4">
-                <p><i class="fas fa-user"></i> <strong>Name:</strong> Nafisatus Zahra</p>
-                <p><i class="fas fa-id-badge"></i> <strong>NIM:</strong> 240605110234</p>
-                <p><i class="fas fa-envelope"></i> <strong>Email:</strong> nafisatuszahra9@gmail.com</p>
-                <p><i class="fab fa-whatsapp"></i> <strong>WhatsApp:</strong> +6282213096772</p>
+            <div class="tm-form-section-tag" style="margin-top:20px;">
+                <div class="tm-bg-secondary tm-text-white tm-block-pad tm-form-section-tag-inner">
+                    <header>
+                        <h2 class="tm-text-center">Meet the Creative Minds</h2>
+                    </header>
+                    <p class="tm-text-center">
+                        Behind Galaxy Soda is a team of passionate creators who aim to make the universe taste refreshing. 
+                        Each bottle represents our teamwork, creativity, and love for cosmic energy.
+                    </p>
+                </div>
             </div>
         </div>
-    </div>
-
-    <div class="tm-form-section-tag" style="margin-top:20px;">
-        <div class="tm-bg-secondary tm-text-white tm-block-pad tm-form-section-tag-inner">
-            <header>
-                <h2 class="tm-text-center">Meet the Creative Minds</h2>
-            </header>
-            <p class="tm-text-center">
-                Behind Galaxy Soda is a team of passionate creators who aim to make the universe taste refreshing. 
-                Each bottle represents our teamwork, creativity, and love for cosmic energy.
-            </p>
-        </div>
-    </div>
-</div>
-
-
 
         <!-- Footer -->
         <div class="tm-footer" id="tmFooter" data-desktop-seq-no="5" data-mobile-seq-no="9">
